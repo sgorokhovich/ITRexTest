@@ -10,4 +10,6 @@
 
 @interface NSManagedObject (Serialization)
 
+- (void)populateWithDictionary:(NSDictionary *)dictionary;
+
 @end

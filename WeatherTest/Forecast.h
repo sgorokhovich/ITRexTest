@@ -13,15 +13,18 @@
 
 @interface Forecast : NSManagedObject
 
-@property (nonatomic, retain) NSDate * date;
+@property (nonatomic, retain) NSNumber * dt;
 @property (nonatomic, retain) NSNumber * pressure;
 @property (nonatomic, retain) NSNumber * humidity;
 @property (nonatomic, retain) NSNumber * speed;
 @property (nonatomic, retain) NSNumber * deg;
 @property (nonatomic, retain) NSNumber * clouds;
 @property (nonatomic, retain) NSNumber * snow;
-@property (nonatomic, retain) NSManagedObject *temperature;
-@property (nonatomic, retain) Weather *weather;
+@property (nonatomic, retain) NSManagedObject *temp;
+@property (nonatomic, retain) NSSet *weather;
 @property (nonatomic, retain) City *city;
+
+- (NSDate *)forecastDate;
+- (NSString *)forecastDateString;
 
 @end

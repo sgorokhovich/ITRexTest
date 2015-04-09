@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Sergey Gorokhovich. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "WTAppDelegate.h"
 
-@interface AppDelegate ()
+@interface WTAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation WTAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

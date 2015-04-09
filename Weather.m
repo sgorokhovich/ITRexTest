@@ -18,4 +18,17 @@
 @dynamic weatherDescription;
 @dynamic forecast;
 
+
+- (WTWeatherType)weatherType {
+    if ([self.main isEqualToString:@"Rain"]) {
+        return WTWeatherTypeRain;
+    } else if ([self.main isEqualToString:@"Clouds"]) {
+        return WTWeatherTypeCloudy;
+    } else if ([self.main isEqualToString:@"Snow"]) {
+        return WTWeatherTypeSnow;
+    }
+    
+    return WTWeatherTypeClear;
+}
+
 @end

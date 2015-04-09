@@ -19,6 +19,11 @@
 @property (nonatomic, retain) NSNumber * population;
 @property (nonatomic, retain) NSSet *forecast;
 @property (nonatomic, retain) Location *coord;
+
+@property (nonatomic, retain) NSDate *updateDate;
+
+- (NSArray *)forecastArray;
+
 @end
 
 @interface City (CoreDataGeneratedAccessors)

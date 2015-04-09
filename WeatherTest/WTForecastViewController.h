@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class City;
+
+
 @interface WTForecastViewController : UIViewController
+
+@property (nonatomic, strong) City *selectedCity;
 
 @end

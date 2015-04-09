@@ -20,4 +20,14 @@
 @dynamic forecast;
 @dynamic coord;
 
+@dynamic updateDate;
+
+- (NSArray *)forecastArray {
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dt" ascending:YES];
+    
+    NSArray *forecastArray = [self.forecast sortedArrayUsingDescriptors:@[sortDescriptor]];
+    
+    return forecastArray;
+}
+
 @end

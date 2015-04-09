@@ -10,4 +10,6 @@
 
 @interface NSNumber (Celsium)
 
+- (NSInteger)celsiumTemperatureValue;
+
 @end

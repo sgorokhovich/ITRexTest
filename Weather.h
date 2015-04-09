@@ -11,6 +11,15 @@
 
 @class Forecast;
 
+
+typedef NS_ENUM(NSInteger, WTWeatherType) {
+    WTWeatherTypeRain,
+    WTWeatherTypeSnow,
+    WTWeatherTypeCloudy,
+    WTWeatherTypeClear
+};
+
+
 @interface Weather : NSManagedObject
 
 @property (nonatomic, retain) NSString * icon;
@@ -18,5 +27,8 @@
 @property (nonatomic, retain) NSString * main;
 @property (nonatomic, retain) NSString * weatherDescription;
 @property (nonatomic, retain) Forecast *forecast;
+
+
+- (WTWeatherType)weatherType;
 
 @end

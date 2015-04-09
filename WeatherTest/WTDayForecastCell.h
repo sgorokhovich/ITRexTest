@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class Forecast;
+
+
 @interface WTDayForecastCell : UITableViewCell
+
++ (NSString *)reuseIdentifier;
+
+- (void)updateWithDayForecast:(Forecast *)forecast;
 
 @end

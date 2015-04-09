@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class City;
+
+
 @interface WTDetailsViewController : UIViewController
+
+@property (strong, nonatomic) City *selectedCity;
+@property (assign, nonatomic) NSInteger selectedIndex;
 
 @end

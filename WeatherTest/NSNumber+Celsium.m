@@ -8,6 +8,17 @@
 
 #import "NSNumber+Celsium.h"
 
+
+static NSInteger const kCelsiumAbsoleteNull = 273;
+
+
 @implementation NSNumber (Celsium)
+
+- (NSInteger)celsiumTemperatureValue {
+    NSInteger kelvinValue   = [self integerValue];
+    NSInteger celsiumValue  = kelvinValue - kCelsiumAbsoleteNull;
+    
+    return celsiumValue;
+}
 
 @end
