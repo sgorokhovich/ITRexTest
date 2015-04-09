@@ -95,7 +95,7 @@ static NSString * const kImageServerURL = @"https://ssl.gstatic.com/onebox/weath
         case WTWeatherTypeClear: return @"/sunny.png"; break;
         case WTWeatherTypeRain: return @"/rain.png"; break;
         case WTWeatherTypeCloudy: return @"/cloudy.png"; break;
-        case WTWeatherTypeSnow: return @"/raing.png"; break;
+        case WTWeatherTypeSnow: return @"/snow.png"; break;
     }
 }
 
